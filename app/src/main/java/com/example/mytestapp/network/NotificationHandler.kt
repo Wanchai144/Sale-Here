@@ -38,7 +38,6 @@ class NotificationHandler {
     }
 
     fun subscribe() {
-        socket.emit("new-notification")
         socket.on("new-notification") { args ->
             if (args.isNotEmpty()) {
                 val notificationData = args[0] as JSONObject

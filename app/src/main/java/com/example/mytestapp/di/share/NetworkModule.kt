@@ -1,7 +1,6 @@
 package com.example.mytestapp.di.share
 
 
-import com.example.mytestapp.BuildConfig
 import com.example.mytestapp.network.NotificationHandler
 import com.example.mytestapp.presentation.common.CoroutineContextProvider
 import com.example.mytestapp.utils.Connectivity
@@ -39,7 +38,6 @@ val networkModule = module {
     single {
         NotificationHandler()
     }
-
 
     //Api interface
 //    single<APIService> { get<RetrofitBuilder>().build(BuildConfig.BASE_API_URL) }

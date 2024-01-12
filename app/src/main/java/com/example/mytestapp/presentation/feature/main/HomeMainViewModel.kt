@@ -4,7 +4,6 @@ import com.example.mytestapp.R
 import com.example.mytestapp.data.model.DataBannerOffer
 import com.example.mytestapp.data.model.DataBannerSuggest
 import com.example.mytestapp.data.model.DataItemProduct
-import com.example.mytestapp.network.NotificationHandler
 import com.example.mytestapp.presentation.feature.base.BaseViewModel
 import com.example.mytestapp.presentation.feature.base.ViewEffect
 
