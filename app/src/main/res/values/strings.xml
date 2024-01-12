@@ -1,0 +1,16 @@
+<resources>
+    <string name="app_name">MyTestApp</string>
+
+    <!-- Bottom Menu -->
+    <string name="bottom_menu_home">Home</string>
+    <string name="bottom_menu_detail">Detail</string>
+    <string name="bottom_menu_point">Point</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="suggest_for_you">Suggest ForYou</string>
+    <string name="best_offer">Best Offer</string>
+    <string name="achievement_level2">Achievement \nLevel2</string>
+    <string name="what_your_goal">What Your Goal</string>
+
+
+</resources>

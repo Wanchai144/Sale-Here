@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/nav_graph"
+    app:startDestination="@id/homeMainFragment">
+
+    <fragment
+        android:id="@+id/homeMainFragment"
+        android:name="com.example.mytestapp.presentation.feature.main.HomeMainFragment"
+        android:label="Home"
+        tools:layout="@layout/fragment_home_main" >
+        <action
+            android:id="@+id/action_homeMainFragment_to_viewGoalFragment"
+            app:destination="@id/viewGoalFragment" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/achievementFragment"
+        android:name="com.example.mytestapp.presentation.feature.achievement.AchievementFragment"
+        android:label="AchievementFragment" />
+
+    <fragment
+        android:id="@+id/viewGoalFragment"
+        android:name="com.example.mytestapp.presentation.feature.goal.ViewGoalFragment"
+        android:label="fragment_view_goal"
+        tools:layout="@layout/fragment_view_goal" >
+        <action
+            android:id="@+id/action_viewGoalFragment_to_homeMainFragment"
+            app:destination="@id/homeMainFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/socketFragment"
+        android:name="com.example.mytestapp.presentation.feature.socket.SocketFragment"
+        android:label="fragment_socket"
+        tools:layout="@layout/fragment_socket" />
+
+</navigation>

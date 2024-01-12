@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item
+        android:id="@+id/homeMainFragment"
+        android:title="Home"
+        android:icon="@drawable/ic_baseline_home" />
+
+    <item
+        android:id="@+id/goalFragment"
+        android:title="Goal"
+        android:icon="@drawable/ic_baseline_list_alt" />
+
+    <item
+        android:id="@+id/achievementFragment"
+        android:title="Achievement"
+        android:icon="@drawable/achievement" />
+
+    <item
+        android:id="@+id/socketFragment"
+        android:title="Socket"
+        android:icon="@drawable/baseline_account_circle_24" />
+
+</menu>

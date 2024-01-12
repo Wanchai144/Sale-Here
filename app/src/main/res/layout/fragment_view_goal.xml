@@ -1,0 +1,174 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.core.widget.NestedScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".presentation.feature.main.HomeMainFragment">
+
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:id="@+id/viewProduct"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:background="#fea325"
+            android:orientation="vertical"
+            android:paddingHorizontal="16dp"
+            android:paddingVertical="16dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent">
+
+
+            <TextView
+                android:id="@+id/tv_name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="30dp"
+                android:text="@string/what_your_goal"
+                android:textColor="@color/white"
+                android:textSize="20sp" />
+
+            <androidx.appcompat.widget.AppCompatEditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                android:background="@color/white"
+                android:padding="8dp" />
+        </LinearLayout>
+
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/rvGoal"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@color/white"
+            android:layout_marginHorizontal="@dimen/dimen_8_dp"
+            android:nestedScrollingEnabled="false"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/viewProduct" />
+
+
+        <com.example.mytestapp.presentation.feature.winget.InputTextFieldLayout
+            android:id="@+id/edtAmount"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:inputType="numberDecimal"
+            app:dynamicHeight="true"
+            app:editTextMinHeight="50dp"
+            app:isShowError="false"
+            android:layout_marginHorizontal="@dimen/dimen_16_dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/rvGoal"
+            app:outOfFocusError="false"
+            app:textHint="Amount"
+            app:textType="THB"
+            app:textOptional="bath" />
+
+        <com.example.mytestapp.presentation.feature.winget.CustomSpinnerDisplay
+            android:id="@+id/spinner"
+            android:layout_width="match_parent"
+            android:layout_marginHorizontal="@dimen/dimen_16_dp"
+            android:layout_height="50dp"
+            style="@style/MyDenseOutlined"
+            android:layout_marginTop="8dp"
+            android:background="@drawable/bg_goal_w1"
+            android:dropDownVerticalOffset="38dp"
+            android:paddingEnd="27dp"
+            android:popupBackground="@drawable/bg_drop_down_spinner"
+            android:spinnerMode="dropdown"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/edtAmount"
+            tools:ignore="RtlSymmetry"
+            tools:listitem="@layout/item_spinner" />
+
+        <androidx.appcompat.widget.AppCompatImageView
+            android:id="@+id/imgDropdownSpinner"
+            android:layout_width="10dp"
+            android:layout_height="0dp"
+            android:layout_alignParentEnd="true"
+            android:layout_centerVertical="true"
+            android:src="@drawable/vector"
+            android:layout_marginEnd="16dp"
+            app:layout_constraintBottom_toBottomOf="@+id/spinner"
+            app:layout_constraintEnd_toEndOf="@+id/spinner"
+            app:layout_constraintTop_toTopOf="@+id/spinner"
+            app:tint="@color/black" />
+
+        <TextView
+            android:id="@+id/titleBank"
+            android:layout_width="match_parent"
+            android:layout_marginHorizontal="@dimen/dimen_16_dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:text="Bank Account"
+            android:textColor="@color/black"
+            android:textSize="18sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/spinner" />
+
+
+        <com.example.mytestapp.presentation.feature.winget.CustomSpinnerDisplay
+            android:id="@+id/spinnerBank"
+            android:layout_width="match_parent"
+            android:layout_marginHorizontal="@dimen/dimen_16_dp"
+            android:layout_height="50dp"
+            android:layout_marginTop="8dp"
+            android:background="@drawable/bg_goal_w1"
+            android:dropDownVerticalOffset="38dp"
+            android:paddingEnd="27dp"
+            android:popupBackground="@drawable/bg_drop_down_spinner"
+            android:spinnerMode="dropdown"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/titleBank"
+            tools:ignore="RtlSymmetry"
+            tools:listitem="@layout/item_spinner" />
+
+
+        <androidx.appcompat.widget.AppCompatImageView
+            android:id="@+id/imgDropdownBank"
+            android:layout_width="10dp"
+            android:layout_height="0dp"
+            android:layout_alignParentEnd="true"
+            android:layout_centerVertical="true"
+            android:src="@drawable/vector"
+            android:layout_marginEnd="16dp"
+            app:layout_constraintBottom_toBottomOf="@+id/spinnerBank"
+            app:layout_constraintEnd_toEndOf="@+id/spinnerBank"
+            app:layout_constraintTop_toTopOf="@+id/spinnerBank"
+            app:tint="@color/black" />
+
+        <com.example.mytestapp.presentation.feature.winget.InputTextFieldLayout
+            android:id="@+id/edtBank"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:layout_marginHorizontal="@dimen/dimen_16_dp"
+            android:inputType="numberDecimal"
+            app:dynamicHeight="true"
+            app:editTextMinHeight="50dp"
+            app:isShowError="false"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/spinnerBank"
+            app:outOfFocusError="false"
+            app:textHint="Bank"
+            app:textType="THB / Month"
+            app:textOptional="bath" />
+
+
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+</androidx.core.widget.NestedScrollView>

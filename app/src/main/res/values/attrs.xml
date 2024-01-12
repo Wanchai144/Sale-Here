@@ -1,0 +1,171 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <attr name="textTitle" format="string" />
+    <attr name="textTitleColor" format="integer" />
+    <attr name="textHint" format="string" />
+    <attr name="textType" format="string" />
+    <attr name="textError" format="string" />
+    <attr name="iconAction" format="reference" />
+    <attr name="textOptional" format="string" />
+    <attr name="text" format="string" />
+    <attr name="spinnerVisibility" format="boolean" />
+    <attr name="outOfFocusError" format="boolean" />
+    <attr name="isShowError" format="boolean" />
+    <attr name="fontSize" format="dimension" />
+    <attr name="fontCountSize" format="dimension" />
+    <attr name="fontBathSize" format="dimension" />
+    <attr name="isClickShowDropDown" format="boolean" />
+    <attr name="isShowLimitCount" format="boolean" />
+    <attr name="gravityText" format="reference" />
+    <attr name="isShowBath" format="boolean" />
+    <attr name="isIncomeType" format="boolean" />
+
+    <declare-styleable name="RadioButton">
+        <attr name="coolRadioButtonLabel" format="string" />
+    </declare-styleable>
+
+    <declare-styleable name="InputTextFieldLayout">
+        <attr name="textTitle" />
+        <attr name="textTitleColor" />
+        <attr name="textHint" />
+        <attr name="textError" />
+        <attr name="textType" />
+        <attr name="iconAction" />
+        <attr name="textOptional" />
+        <attr name="android:inputType" />
+        <attr name="android:maxLength" />
+        <attr name="android:longClickable" />
+        <attr name="outOfFocusError" />
+        <attr name="fontSize" />
+        <attr name="isShowError" />
+        <attr name="fontCountSize" />
+        <attr name="fontBathSize" />
+        <attr name="isShowBath" />
+        <attr name="isIncomeType" />
+        <attr name="gravityEditText">
+            <flag name="bottom" value="80" />
+            <flag name="center" value="17" />
+            <flag name="center_horizontal" value="1" />
+            <flag name="center_vertical" value="16" />
+            <flag name="clip_horizontal" value="8" />
+            <flag name="clip_vertical" value="128" />
+            <flag name="end" value="8388613" />
+            <flag name="fill" value="119" />
+            <flag name="fill_horizontal" value="7" />
+            <flag name="fill_vertical" value="112" />
+            <flag name="left" value="3" />
+            <flag name="right" value="5" />
+            <flag name="start" value="8388611" />
+            <flag name="top" value="48" />
+        </attr>
+        <attr name="dynamicHeight" format="boolean" />
+        <attr name="editTextMinHeight" format="dimension" />
+    </declare-styleable>
+
+    <declare-styleable name="InputTextFieldWithoutTitleTextLayout">
+        <attr name="textHint" />
+        <attr name="textType" />
+        <attr name="iconAction" />
+        <attr name="android:inputType" />
+        <attr name="android:maxLength" />
+        <attr name="android:longClickable" />
+        <attr name="outOfFocusError" />
+        <attr name="fontSize" />
+        <attr name="isShowError" />
+        <attr name="isShowLimitCount"/>
+    </declare-styleable>
+
+    <declare-styleable name="InputTextFieldSpinnerLayout">
+        <attr name="textHint" />
+        <attr name="textType" />
+        <attr name="android:inputType" />
+        <attr name="android:maxLength" />
+        <attr name="spinnerVisibility" />
+        <attr name="outOfFocusError" />
+    </declare-styleable>
+
+    <declare-styleable name="InputTextFieldSpinnerNoAnswerLayout">
+        <attr name="textTitle" />
+        <attr name="textHint" />
+        <attr name="textType" />
+        <attr name="tintIcon" format="reference" />
+    </declare-styleable>
+
+    <declare-styleable name="InputTextFieldPasswordLayout">
+        <attr name="textTitle" />
+        <attr name="textHint" />
+        <attr name="textType" />
+        <attr name="textOptional" />
+        <attr name="android:maxLength" />
+        <attr name="outOfFocusError" />
+    </declare-styleable>
+
+    <declare-styleable name="AutoCompleteTextFieldClickArrowShowDropDownLayout">
+        <attr name="textTitle" />
+        <attr name="textHint" />
+        <attr name="textType" />
+        <attr name="iconAction" />
+        <attr name="textOptional" />
+        <attr name="android:inputType" />
+        <attr name="android:maxLength" />
+        <attr name="android:longClickable" />
+        <attr name="outOfFocusError" />
+        <attr name="fontSize" />
+        <attr name="isShowError" />
+        <attr name="isClickShowDropDown"/>
+    </declare-styleable>
+
+    <declare-styleable name="TextViewCheck">
+        <attr name="text" />
+    </declare-styleable>
+
+    <declare-styleable name="SettingsChangeLimit">
+        <attr name="textTitle" />
+        <attr name="textHint" />
+        <attr name="textType" />
+        <attr name="outOfFocusError" />
+        <attr name="fontSize" />
+        <attr name="showNotLimit" format="boolean" />
+        <attr name="showLineExpand" format="boolean" />
+    </declare-styleable>
+
+    <declare-styleable name="ToggleButtonText">
+        <attr name="buttonCheck" format="boolean" />
+        <attr name="textToggleOn" format="string" />
+        <attr name="textToggleOff" format="string" />
+    </declare-styleable>
+
+    <declare-styleable name="SettingsLoanCalculate">
+        <attr name="fontSize" />
+    </declare-styleable>
+
+    <attr name="imageRatio" format="enum">
+        <enum name="square" value="0" />
+        <enum name="W2L1" value="1" />
+        <enum name="W3L1" value="2"/>
+    </attr>
+    <attr name="imageOrientation" format="enum">
+        <enum name="landscape" value="0"/>
+        <enum name="portrait" value="1"/>
+    </attr>
+
+    <declare-styleable name="ImageRatioView">
+        <attr name="imageRatio" />
+        <attr name="imageOrientation" />
+    </declare-styleable>
+
+    <declare-styleable name="NotificationBellLayout">
+        <attr name="fontSize" />
+    </declare-styleable>
+
+    <declare-styleable name="RecordButton">
+        <attr name="circleColor" format="color" />
+        <attr name="progressColor" format="color" />
+        <attr name="progressWidth" format="dimension" />
+    </declare-styleable>
+
+    <declare-styleable name="CircleOverlayView">
+        <attr name="marginVertical" format="dimension"/>
+        <attr name="marginHorizontal" format="dimension"/>
+    </declare-styleable>
+</resources>
